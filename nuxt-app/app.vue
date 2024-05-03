@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useVuePiniaLibrary } from 'vue-pinia-library'
+import { useVuePiniaLibrary, VuePiniaLibrary } from 'vue-pinia-library'
 
 const appStore = useApp()
 const store = useVuePiniaLibrary(useNuxtApp().$pinia)
@@ -16,6 +16,8 @@ const store = useVuePiniaLibrary(useNuxtApp().$pinia)
 			<button @click="store.yes">yes</button>
 			<button @click="store.no">no</button>
 		</div>
+
+		<VuePiniaLibrary></VuePiniaLibrary>
 
 		<!-- <div style="border: solid 1px black">
 			<div>useWrapperStore</div>
