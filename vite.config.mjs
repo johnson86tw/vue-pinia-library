@@ -14,18 +14,17 @@ export default defineConfig({
 		assetsDir: 'assets',
 		lib: {
 			entry: path.resolve(__dirname, 'src/index.ts'),
-			name: '@vue-dapp/modal',
-			fileName: 'modal',
+			name: 'vue-pinia-library',
+			fileName: 'index',
 		},
 		outDir: 'dist',
 		rollupOptions: {
-			external: ['vue', 'pinia', '@vue-dapp/core'],
+			external: ['vue', 'pinia'],
 			output: {
 				dir: 'dist',
 				globals: {
 					vue: 'vue',
 					pinia: 'pinia',
-					'@vue-dapp/core': 'core',
 				},
 			},
 		},

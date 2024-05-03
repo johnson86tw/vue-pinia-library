@@ -1,34 +1,26 @@
 {
-	"name": "@vue-dapp/modal",
-	"version": "1.3.2",
-	"description": "Empower dapp developers with Vue integration for crypto wallets",
-	"repository": "https://github.com/vu3th/vue-dapp",
-	"bugs": {
-		"url": "https://github.com/vu3th/vue-dapp/issues"
-	},
-	"homepage": "https://github.com/vu3th/vue-dapp",
+	"name": "vue-pinia-library",
+	"version": "0.0.1",
+	"description": "",
 	"author": "Johnson Chen <https://twitter.com/johnson86tw>",
 	"license": "MIT",
 	"keywords": [
 		"vue",
 		"vue3",
-		"dapp",
-		"web3",
-		"ethereum",
-		"crypto",
-		"wallet",
-		"component"
+		"pinia",
+		"store",
+		"library"
 	],
 	"files": [
 		"dist"
 	],
-	"main": "./dist/modal.mjs",
-	"module": "./dist/modal.mjs",
+	"main": "./dist/index.mjs",
+	"module": "./dist/index.mjs",
 	"types": "./dist/index.d.ts",
 	"exports": {
 		".": {
-			"import": "./dist/modal.mjs",
-			"require": "./dist/modal.umd.js"
+			"import": "./dist/index.mjs",
+			"require": "./dist/index.umd.js"
 		},
 		"./dist/style.css": "./dist/style.css"
 	},
@@ -44,7 +36,6 @@
 	},
 	"devDependencies": {
 		"@vitejs/plugin-vue": "^5.0.3",
-		"@vue-dapp/core": "^1.3.2",
 		"pinia": "^2.1.7",
 		"typescript": "^5.3.3",
 		"vite": "^5.2.9",
@@ -53,9 +44,7 @@
 		"vue-tsc": "^0.29.8"
 	},
 	"peerDependencies": {
-		"@vue-dapp/core": "*",
 		"pinia": ">=2.1.7",
 		"vue": ">=3.3.6"
-	},
-	"gitHead": "32a6d53db2bd674115648f41c80582140175c25b"
+	}
 }

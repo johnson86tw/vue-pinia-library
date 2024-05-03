@@ -1,20 +1,20 @@
 import { ref } from 'vue'
 import { defineStore } from 'pinia'
 
-export const useVueDappModal = defineStore('vd-modal-store', () => {
-	const isModalOpen = ref(false)
+export const useVuePiniaLibrary = defineStore('vue-pinia-library', () => {
+	const isGood = ref(false)
 
-	function open() {
-		isModalOpen.value = true
+	function yes() {
+		isGood.value = true
 	}
 
-	function close() {
-		isModalOpen.value = false
+	function no() {
+		isGood.value = false
 	}
 
 	return {
-		isModalOpen,
-		open,
-		close,
+		isGood,
+		yes,
+		no,
 	}
 })

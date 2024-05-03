@@ -1,4 +1,4 @@
-import VueDappModal from './VueDappModal.vue'
-export { VueDappModal }
+import VuePiniaLibrary from './VuePiniaLibrary.vue'
+export { VuePiniaLibrary }
 
 export * from './store'
