@@ -15,3 +15,5 @@ const wrapperStore = useWrapperStore()
 
 - why @vue-dapp/modal works?
 - remove wrapper store, publish, and test on nuxt prod.
+
+Same as v0.0.1

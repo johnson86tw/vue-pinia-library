@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import { useVuePiniaLibrary, useWrapperStore } from 'vue-pinia-library'
+import { useVuePiniaLibrary } from 'vue-pinia-library'
 
 const appStore = useApp()
 const store = useVuePiniaLibrary(useNuxtApp().$pinia)
-const wrapperStore = useWrapperStore()
+// const wrapperStore = useWrapperStore()
 </script>
 
 <template>
@@ -17,12 +17,12 @@ const wrapperStore = useWrapperStore()
 			<button @click="store.no">no</button>
 		</div>
 
-		<div style="border: solid 1px black">
+		<!-- <div style="border: solid 1px black">
 			<div>useWrapperStore</div>
 			<div>Is good? {{ wrapperStore.isGood }}</div>
 			<button @click="wrapperStore.yes">yes</button>
 			<button @click="wrapperStore.no">no</button>
-		</div>
+		</div> -->
 	</div>
 </template>
 
