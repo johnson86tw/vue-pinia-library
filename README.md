@@ -1,6 +1,14 @@
 # Vue Pinia Library
 
+This is a demo aiming to create a Vue library that relies on Pinia. We assume that library users will employ Pinia in their Vue projects, whether it's Vue or Nuxt. Consequently, we can abstract a Pinia store within the library, allowing users to access state, getters, and actions within the store that are designed by the library's author.
+
+It would be interesting if we incorporate any kind of SDK or API service into a Pinia library. In this way, we can design a global vue-reactive state as a pinia store of the app to better serve library users.
+
+My project, [Vue Dapp](https://github.com/vu3th/vue-dapp), was created using this method.
+
+
 ## Related issues
+- [Build components that depend on pinia in library mode](https://github.com/vuejs/pinia/discussions/1059)
 - [pinia store in library mode doesn't work](https://github.com/vuejs/pinia/discussions/2487)
 - [Component that uses pinia in library mode can't be imported and reused in another app](https://github.com/vuejs/pinia/discussions/1073)
 - [How to pass a Pinia store from the app to a vue 3 library](https://stackoverflow.com/questions/76852804/how-to-pass-a-pinia-store-from-the-app-to-a-vue-3-library)
