@@ -19,3 +19,21 @@ export const useVuePiniaLibrary = defineStore('vue-pinia-library', () => {
 		no,
 	}
 })
+
+export const useVuePiniaLibrary2 = defineStore('vue-pinia-library-2', () => {
+	const counter = ref(0)
+
+	function increment() {
+		counter.value++
+	}
+
+	function decrement() {
+		counter.value--
+	}
+
+	return {
+		counter,
+		increment,
+		decrement,
+	}
+})

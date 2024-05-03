@@ -1,8 +1,9 @@
 <script setup lang="ts">
-import { useVuePiniaLibrary, VuePiniaLibrary } from 'vue-pinia-library'
+import { useVuePiniaLibrary, useVuePiniaLibrary2, VuePiniaLibrary } from 'vue-pinia-library'
 
 const appStore = useApp()
-const store = useVuePiniaLibrary()
+const store = useVuePiniaLibrary(useNuxtApp().$pinia)
+const store2 = useVuePiniaLibrary2()
 // const wrapperStore = useWrapperStore()
 </script>
 
@@ -18,6 +19,13 @@ const store = useVuePiniaLibrary()
 		</div>
 
 		<VuePiniaLibrary></VuePiniaLibrary>
+
+		<div style="border: solid 1px black">
+			<div>useVuePiniaLibrary 2</div>
+			<div>Is good? {{ store2.counter }}</div>
+			<button @click="store2.increment">increment</button>
+			<button @click="store2.decrement">decrement</button>
+		</div>
 
 		<!-- <div style="border: solid 1px black">
 			<div>useWrapperStore</div>

@@ -53,3 +53,12 @@ rollupOptions: {
 ```
 
 沒用，典型錯誤。
+
+## v0.0.6 store 2 in pinia-library
+
+只需要一個 store 填入 $pinia，其他 store 可以不用填入！
+
+```ts
+const store = useVuePiniaLibrary(useNuxtApp().$pinia)
+const store2 = useVuePiniaLibrary2()
+```
