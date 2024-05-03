@@ -19,7 +19,7 @@ export default defineConfig({
 		},
 		outDir: 'dist',
 		rollupOptions: {
-			external: ['vue'],
+			external: ['vue', 'pinia'],
 			output: {
 				dir: 'dist',
 				globals: {

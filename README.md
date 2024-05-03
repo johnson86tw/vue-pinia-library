@@ -15,6 +15,12 @@ const store = useVuePiniaLibrary(useNuxtApp().$pinia)
 const wrapperStore = useWrapperStore()
 ```
 
+典型錯誤
+
+```
+Cannot read properties of undefined (reading '_s')
+```
+
 ## v0.0.2 remove wrapper store
 
 - Same as v0.0.1
@@ -32,3 +38,18 @@ const wrapperStore = useWrapperStore()
 ```
 [🍍]: "getActivePinia()" was called but there was no active Pinia. Are you trying to use a store before calling "app.use(pinia)"? See https://pinia.vuejs.org/core-concepts/outside-component-usage.html for help. This will fail in production.
 ```
+
+## v0.0.5 使用 external 但不加 output
+```
+rollupOptions: {
+	external: ['vue', 'pinia'],
+	output: {
+		dir: 'dist',
+		globals: {
+			vue: 'vue',
+		},
+	},
+},
+```
+
+沒用，典型錯誤。
