@@ -4,6 +4,10 @@
 pnpm add pinia @pinia/nuxt
 ```
 
+```
+pnpm build && node .output/server/index.mjs
+```
+
 
 ## Link package
 - Using directory link, library should rebuild to update the dist files and can be used.

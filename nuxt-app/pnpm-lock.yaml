@@ -18,8 +18,8 @@ dependencies:
     specifier: ^3.4.21
     version: 3.4.26
   vue-pinia-library:
-    specifier: ^0.0.3
-    version: 0.0.3(pinia@2.1.7)(vue@3.4.26)
+    specifier: ^0.0.4
+    version: 0.0.4(pinia@2.1.7)(vue@3.4.26)
   vue-router:
     specifier: ^4.3.0
     version: 4.3.2(vue@3.4.26)
@@ -6616,8 +6616,8 @@ packages:
       vue: 3.4.26
     dev: false
 
-  /vue-pinia-library@0.0.3(pinia@2.1.7)(vue@3.4.26):
-    resolution: {integrity: sha512-6hvOOZ53d7evc0PSi6nahwYkSCmlULG5LexBvXp5tMHyNJUuzrNgRI7lHULic8UBPnB1sdX4Vt3zz09I4244Fw==}
+  /vue-pinia-library@0.0.4(pinia@2.1.7)(vue@3.4.26):
+    resolution: {integrity: sha512-ACa1aNsBgYIJ5KIuwXB/CuqHVPBc/DRm/S3iQQJ9kL8NGaYDoYI+ApW33aQydjHTi3u7lP1KhNkKwNsTSRzS4A==}
     peerDependencies:
       pinia: '>=2.1.7'
       vue: '>=3.3.6'

@@ -2,7 +2,7 @@
 import { useVuePiniaLibrary, VuePiniaLibrary } from 'vue-pinia-library'
 
 const appStore = useApp()
-const store = useVuePiniaLibrary(useNuxtApp().$pinia)
+const store = useVuePiniaLibrary()
 // const wrapperStore = useWrapperStore()
 </script>
 
