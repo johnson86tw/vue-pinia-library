@@ -1,75 +1,26 @@
-# Nuxt 3 Minimal Starter
+# Nuxt App
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
-
-## Setup
-
-Make sure to install the dependencies:
-
-```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
+```
+pnpm add pinia @pinia/nuxt
 ```
 
-## Development Server
 
-Start the development server on `http://localhost:3000`:
+## Link package
+- Using directory link, library should rebuild to update the dist files and can be used.
 
-```bash
-# npm
-npm run dev
 
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
+```
+pnpm link ../
 ```
 
-## Production
 
-Build the application for production:
+## Cancel Directory Link
 
-```bash
-# npm
-npm run build
+Whether using Method 1 or 2 for Directory link, unlinking is done in the target project:
 
-# pnpm
-pnpm run build
+# Unlink my-lib in my-app
+cd ~/projects/my-app
 
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+pnpm unlink ~/projects/my-lib
+# Or using the package name
+pnpm unlink my-lib

@@ -5,12 +5,21 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@pinia/nuxt':
+    specifier: ^0.5.1
+    version: 0.5.1(vue@3.4.26)
   nuxt:
     specifier: ^3.11.2
     version: 3.11.2(@unocss/reset@0.59.4)(floating-vue@5.2.2)(unocss@0.59.4)(vite@5.2.11)
+  pinia:
+    specifier: ^2.1.7
+    version: 2.1.7(vue@3.4.26)
   vue:
     specifier: ^3.4.21
     version: 3.4.26
+  vue-pinia-library:
+    specifier: ^0.0.1
+    version: 0.0.1(pinia@2.1.7)(vue@3.4.26)
   vue-router:
     specifier: ^4.3.0
     version: 4.3.2(vue@3.4.26)
@@ -1257,6 +1266,19 @@ packages:
       '@parcel/watcher-win32-arm64': 2.4.1
       '@parcel/watcher-win32-ia32': 2.4.1
       '@parcel/watcher-win32-x64': 2.4.1
+    dev: false
+
+  /@pinia/nuxt@0.5.1(vue@3.4.26):
+    resolution: {integrity: sha512-6wT6TqY81n+7/x3Yhf0yfaJVKkZU42AGqOR0T3+UvChcaOJhSma7OWPN64v+ptYlznat+fS1VTwNAcbi2lzHnw==}
+    dependencies:
+      '@nuxt/kit': 3.11.2
+      pinia: 2.1.7(vue@3.4.26)
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+      - rollup
+      - supports-color
+      - typescript
+      - vue
     dev: false
 
   /@pkgjs/parseargs@0.11.0:
@@ -5000,6 +5022,23 @@ packages:
     engines: {node: '>=8.6'}
     dev: false
 
+  /pinia@2.1.7(vue@3.4.26):
+    resolution: {integrity: sha512-+C2AHFtcFqjPih0zpYuvof37SFxMQ7OEG2zV9jRI12i9BOy3YQVAHwdKtyyc8pDcDyIc33WCIsZaCFWU7WWxGQ==}
+    peerDependencies:
+      '@vue/composition-api': ^1.4.0
+      typescript: '>=4.4.4'
+      vue: ^2.6.14 || ^3.3.0
+    peerDependenciesMeta:
+      '@vue/composition-api':
+        optional: true
+      typescript:
+        optional: true
+    dependencies:
+      '@vue/devtools-api': 6.6.1
+      vue: 3.4.26
+      vue-demi: 0.14.7(vue@3.4.26)
+    dev: false
+
   /pkg-types@1.1.0:
     resolution: {integrity: sha512-/RpmvKdxKf8uILTtoOhAgf30wYbP2Qw+L9p3Rvshx1JZVX+XQNZQFjlbmGHEGIm4CkVPlSn+NXmIM8+9oWQaSA==}
     dependencies:
@@ -6574,6 +6613,16 @@ packages:
     peerDependencies:
       vue: ^3.0.0
     dependencies:
+      vue: 3.4.26
+    dev: false
+
+  /vue-pinia-library@0.0.1(pinia@2.1.7)(vue@3.4.26):
+    resolution: {integrity: sha512-HYIg3L23WlexwdE2onXD4OdgbHVcEqnNCWFOJYr2AMU5P9z1p1PjuM2a+9GLv38QtTVByyMfNUFB24NREd16Dw==}
+    peerDependencies:
+      pinia: '>=2.1.7'
+      vue: '>=3.3.6'
+    dependencies:
+      pinia: 2.1.7(vue@3.4.26)
       vue: 3.4.26
     dev: false
 

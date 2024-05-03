@@ -5,6 +5,7 @@ export const useVuePiniaLibrary = defineStore('vue-pinia-library', () => {
 	const isGood = ref(false)
 
 	function yes() {
+		console.log('yes')
 		isGood.value = true
 	}
 
