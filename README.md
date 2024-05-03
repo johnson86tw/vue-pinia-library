@@ -1,9 +1,14 @@
 # Vue Pinia Library
 
+## Related issues
+- [pinia store in library mode doesn't work](https://github.com/vuejs/pinia/discussions/2487)
+- [Component that uses pinia in library mode can't be imported and reused in another app](https://github.com/vuejs/pinia/discussions/1073)
+
+
+## Process
+
 1. update library version and then publish.
 2. test prod in nuxt-app
-
-- why @vue-dapp/modal works?
 
 ## v0.0.1
 - Using directory link package, it works on dev and prod.
@@ -57,6 +62,7 @@ rollupOptions: {
 ## v0.0.6 store 2 in pinia-library
 
 只需要一個 store 填入 $pinia，其他 store 可以不用填入！
+Only one store needs to be filled in with $pinia, other stores do not need to be filled in!
 
 ```ts
 const store = useVuePiniaLibrary(useNuxtApp().$pinia)
